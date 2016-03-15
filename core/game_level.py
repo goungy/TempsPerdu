@@ -50,5 +50,5 @@ class GameLevel(object):
         print("Level columns", self.level_columns_num)
 
     def update_if_needed(self, game_clock):
-        print("updating game level")
+        # print("updating game level")
         pass
