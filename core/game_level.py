@@ -27,7 +27,9 @@ class LevelCreator(object):
             ln = 1
             for l in f:
                 l = l.rstrip()
-                if not len(l): ln += 1; continue
+                if not len(l):
+                    ln += 1
+                    continue
                 l = l.split(':')
                 if len(l) == 2:
                     self.interpret_one_arg_line(l)
@@ -48,6 +50,7 @@ class GameLevel(object):
         print("Level", self.level_title)
         print("Level rows", self.level_rows_num)
         print("Level columns", self.level_columns_num)
+        pass
 
     def update_if_needed(self, game_clock):
         # print("updating game level")
